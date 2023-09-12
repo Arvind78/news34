@@ -14,13 +14,13 @@ const cardContainer= document.getElementById("card-container");
 const newsCardTemplate= document.getElementById("template-news-cards");
 
 cardContainer.innerHTML="";
-
+if(articles){
 articles.forEach(article => {
     if(!article.urlToImage) return;
     const cardClone = newsCardTemplate.content.cloneNode(true);
     fillDataNewsInCard(cardClone,article)
     cardContainer.appendChild(cardClone)
-});
+})}
 
 }
 
