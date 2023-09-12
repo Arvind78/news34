@@ -20,10 +20,10 @@ articles.forEach(article => {
     const cardClone = newsCardTemplate.content.cloneNode(true);
     fillDataNewsInCard(cardClone,article)
     cardContainer.appendChild(cardClone)
-})}
+});
 
 }
-
+}
 
 function fillDataNewsInCard(cardClone,article){
 const newsImg= cardClone.querySelector("#news-img");
