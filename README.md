@@ -23,7 +23,7 @@ News34 is a responsive news web application that allows users to stay updated wi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/news34.git
+   git clone https://github.com/Arvind78/news34.git
    ```
 
 2. Open the project directory:
