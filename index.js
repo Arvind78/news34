@@ -10,7 +10,8 @@ async function fetchNews(query){
   showData(result.articles);
 }
 
-fetchNews("india");
+window.addEventListener('load',()=> fetchNews("india"))
+
 
 function showData(articles){
 const cardContainer= document.getElementById("card-container");
