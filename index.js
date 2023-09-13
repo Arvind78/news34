@@ -2,13 +2,15 @@ const url =`https://newsapi.org/v2/everything?q=`;
 const apiKey =`3c90383ac1b247aba7465a89477a69fb`;
 const body= document.getElementById("body");
 
-body.onload(fetchNews("india"));
+
 
 async function fetchNews(query){
   const response = await fetch(`${url}${query}&apiKey=${apiKey}`);
   const result = await response.json();
   showData(result.articles);
 }
+
+fetchNews("india");
 
 function showData(articles){
 const cardContainer= document.getElementById("card-container");
