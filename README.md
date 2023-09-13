@@ -17,7 +17,7 @@ News34 is a responsive news web application that allows users to stay updated wi
 - HTML
 - CSS
 - JavaScript
-- [News API](https://newsapi.org/) - Used to fetch news data.
+- [News API](https://gnews.io/) - Used to fetch news data.
 
 ## Installation
 
@@ -45,14 +45,14 @@ News34 is a responsive news web application that allows users to stay updated wi
 
 To configure the application to use your own News API key, follow these steps:
 
-1. Sign up for a free API key on the [News API website](https://newsapi.org/).
+1. Sign up for a free API key on the [News API](https://gnews.io/).
 
 2. Open the `config.js` file in the project directory.
 
-3. Replace `'3c90383ac1b247aba7465a89477a69fb'` with your actual API key.
+3. Replace `'5ff4447dd996eb4de6f33f2f972533bc'` with your actual API key.
 
 ```javascript
-const apiKey = '3c90383ac1b247aba7465a89477a69fb';
+const apiKey = '5ff4447dd996eb4de6f33f2f972533bc';
 ```
 
 4. Save the file.
