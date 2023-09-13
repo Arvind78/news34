@@ -1,12 +1,7 @@
-const url =`https://newsapi.org/v2/everything?q=`;
-const apiKey =`3c90383ac1b247aba7465a89477a69fb`;
-const body= document.getElementById("body");
-
-
-
 async function fetchNews(query){
-  const response = await fetch(`${url}${query}&apiKey=${apiKey}`);
+  const response = await fetch(`https://gnews.io/api/v4/search?q=${query}&lang=en&country=india&max=100&apikey=5ff4447dd996eb4de6f33f2f972533bc`);
   const result = await response.json();
+  console.log(result.articles)
   showData(result.articles);
 }
 
@@ -20,7 +15,7 @@ const newsCardTemplate= document.getElementById("template-news-cards");
 cardContainer.innerHTML="";
 if(articles){
 articles.forEach(article => {
-    if(!article.urlToImage) return;
+    if(!article.image) return;
     const cardClone = newsCardTemplate.content.cloneNode(true);
     fillDataNewsInCard(cardClone,article)
     cardContainer.appendChild(cardClone)
@@ -35,7 +30,7 @@ const newsTitle= cardClone.querySelector("#news-title");
 const newsSource= cardClone.querySelector("#news-source");
 const newsDes= cardClone.querySelector("#news-desc");
 
-newsImg.src= article.urlToImage;
+newsImg.src= article.image;
 newsTitle.innerHTML=article.title;
 newsDes.innerHTML=article.description;
 
