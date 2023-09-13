@@ -131,6 +131,18 @@ main{
 }
 
 
+@media (max-width:760px){
+  .card {
+    width: 500px;
+    min-height:200px;
+    box-shadow: 0 0 4px #d4ecff;
+     overflow: hidden;
+    background-color: #fff;
+     border-radius: 4px;
+    cursor: pointer;
+    transition:  all 0.3s ease;
+   }
+}
 
 /* responsive header  mostly 300px  */
 
@@ -141,7 +153,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 5px;
+    padding: 0px 10px !important;
     background-color: #f3faff;
   }
 
@@ -195,5 +207,18 @@ main{
   .search button:hover {
     transition: 450ms ease;
     background-color: var(--accentdark-text-color);
+  }
+}
+
+
+@media (max-width: 350px) {
+  header {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    background-color: #f3faff;
   }
 }
